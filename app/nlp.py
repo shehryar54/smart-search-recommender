@@ -6,10 +6,10 @@ import numpy as np
 import pickle
 import os
 
-
-MODEL_NAME = "all-MiniLM-L6-v2"
-EMBEDDINGS_PATH = "models/embeddings.pkl"
-DATASET_PATH = "data/freelancers.csv"
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import MODEL_NAME, DATASET_PATH, EMBEDDINGS_PATH
 
 model = SentenceTransformer(MODEL_NAME)
 

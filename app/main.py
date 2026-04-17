@@ -1,3 +1,16 @@
+"""
+Smart Search & Recommendation API
+----------------------------------
+A FastAPI-based backend that understands natural language queries
+and recommends the most relevant freelancers using NLP and semantic search.
+
+Endpoints:
+    POST /analyze               - Extract intent from query
+    GET  /recommend             - Get ranked freelancer recommendations
+    POST /simulate-interaction  - Log user interactions
+"""
+
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from app.nlp import load_dataset, get_embeddings, extract_intent

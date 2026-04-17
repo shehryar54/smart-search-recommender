@@ -5,3 +5,5 @@ __pycache__/
 .env
 models/
 .DS_Store
+doenload_model.py
+download_model.py
